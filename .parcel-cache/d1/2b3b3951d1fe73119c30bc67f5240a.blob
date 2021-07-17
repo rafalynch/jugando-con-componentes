@@ -1,0 +1,17 @@
+var _header = require("./components/header");
+var _footer = require("./components/footer");
+var _title = require("./components/title");
+var _subtitle = require("./components/subtitle");
+var _bajada = require("./components/bajada");
+var _button = require("./components/button");
+var _textInput = require("./components/text-input");
+function main() {
+    _header.header();
+    _title.title();
+    _subtitle.subtitle();
+    _bajada.bajada();
+    _footer.footer();
+    _button.button();
+    _textInput.textInput();
+}
+main();

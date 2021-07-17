@@ -1,0 +1,33 @@
+var _header = require("./components/header");
+var _footer = require("./components/footer");
+var _title = require("./components/title");
+var _subtitle = require("./components/subtitle");
+function bajada() {
+    class Bajada extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var bajadaEl = document.createElement("span");
+            bajadaEl.className = "bajada";
+            bajadaEl.innerText = "Esta es la mejor bajada";
+            var style = document.createElement("style");
+            style.innerText = ` .bajada{\n        font-size: 12px; \n        font-family: "Roboto";\n      }\n      `;
+            shadow.appendChild(bajadaEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("bajada-el", Bajada);
+}
+function main() {
+    _header.header();
+    _title.title();
+    _subtitle.subtitle();
+    bajada();
+    _footer.footer();
+}
+main();

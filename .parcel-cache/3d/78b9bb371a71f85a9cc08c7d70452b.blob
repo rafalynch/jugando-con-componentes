@@ -1,0 +1,27 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "textInput", ()=>textInput
+);
+function textInput() {
+    class TextInput extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var textInputEl = document.createElement("input");
+            textInputEl.className = "input";
+            textInputEl.setAttribute("type", "text");
+            var style = document.createElement("style");
+            style.innerText = ` .input{\n        display: block;\n        margin:  15px 0;\n      }\n      `;
+            var labelEl = document.createElement("label");
+            labelEl.className = "label";
+            shadow.appendChild(textInputEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("textinput-el", TextInput);
+}

@@ -1,0 +1,25 @@
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "title", ()=>title
+);
+function title() {
+    class Title extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var titleEl = document.createElement("h1");
+            titleEl.setAttribute("class", "title");
+            titleEl.innerText = "Soy un titulo ";
+            var style = document.createElement("style");
+            style.textContent = `.title {\n        display: flex;\n        align-items: center;\n        height: 50px;\n        font-size: 52px; \n        font-family: "Roboto";\n        margin: 0 0 25px;\n      }\n      `;
+            shadow.appendChild(titleEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("title-el", Title);
+}

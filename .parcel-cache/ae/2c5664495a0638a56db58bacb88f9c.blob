@@ -1,0 +1,91 @@
+function header() {
+    class Header extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var headerEl = document.createElement("div");
+            headerEl.setAttribute("class", "header");
+            headerEl.innerText = "Header";
+            var style = document.createElement("style");
+            style.textContent = `.header {\n        background-color: #FF8282;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 50px;\n        font-size: 22px; \n        font-family: "Roboto";\n      }\n      `;
+            shadow.appendChild(headerEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("header-el", Header);
+}
+function title() {
+    class Title extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var titleEl = document.createElement("h1");
+            titleEl.setAttribute("class", "title");
+            titleEl.innerText = "Soy un titulo ";
+            var style = document.createElement("style");
+            style.textContent = `.title {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 50px;\n        font-size: 52px; \n        font-family: "Roboto";\n      }\n      `;
+            shadow.appendChild(titleEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("title-el", Title);
+}
+function subtitle() {
+    class Subtitle extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var subtitleEl = document.createElement("h3");
+            subtitleEl.setAttribute("class", "subtitle");
+            subtitleEl.innerText = "Subtitulo";
+            var style = document.createElement("style");
+            style.textContent = `.subtitle {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 50px;\n        font-size: 20px; \n        font-family: "Roboto";\n      }\n      `;
+            shadow.appendChild(subtitleEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("subtitle-el", Subtitle);
+}
+function footer() {
+    class Footer extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var footerEl = document.createElement("div");
+            footerEl.innerText = "Footer";
+            footerEl.className = "footer";
+            var style = document.createElement("style");
+            style.textContent = ` .footer {\n        background-color: #FFA0EA;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 230px;\n        font-size: 22px; \n        font-family: "Roboto";\n      }\n      `;
+            shadow.appendChild(footerEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("footer-el", Footer);
+}
+function main() {
+    header();
+    title();
+    subtitle();
+    footer();
+}
+main();

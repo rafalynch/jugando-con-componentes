@@ -1,0 +1,13 @@
+var _header = require("./components/header");
+var _footer = require("./components/footer");
+var _title = require("./components/title");
+var _subtitle = require("./components/subtitle");
+var _bajada = require("./components/bajada");
+function main() {
+    _header.header();
+    _title.title();
+    _subtitle.subtitle();
+    _bajada.bajada();
+    _footer.footer();
+}
+main();

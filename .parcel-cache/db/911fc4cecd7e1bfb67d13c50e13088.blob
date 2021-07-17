@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.HASH_REF_6aeb581adf3c1501da5beaee7363110a.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <header-el></header-el>
+    <div class="content" style="max-width: 600px; margin: 0 auto; padding: 50px
+">
+      <title-el></title-el>
+      <bajada-el></bajada-el>
+      <subtitle-el></subtitle-el>
+      <textinput-el></textinput-el>
+      <button-el></button-el>
+    </div>
+    <button-el></button-el>
+    <div id="root"></div>
+    <script type="module" src="/index.HASH_REF_d8fea09d5cdffe3ebd33227f1118e894.js"></script>
+  </body>
+</html>

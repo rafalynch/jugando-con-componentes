@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="789826dd7e8914063003f2970e92fcad">
+    <link rel="preconnect" href="f0284d369ac22f4308a77ec0c9977aa7">
+    <link rel="preconnect" href="d7c2b8c89e8843c0697300fa104dd24b" crossorigin="">
+    <link href="01e03f161616ec3b109a15dc3dd97baa" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <header-el></header-el>
+    <div class="content" style="f41e07423e9dc07e859bb365e833fe30">
+      <title-el></title-el>
+      <bajada-el></bajada-el>
+      <subtitle-el></subtitle-el>
+      <button-el></button-el>
+    </div>
+    <footer-el></footer-el>
+    <div id="root"></div>
+    <script type="module" src="121adfe2daa95f3b095b56be1d02f2d6"></script>
+  </body>
+</html>

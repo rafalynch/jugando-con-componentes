@@ -1,0 +1,9 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=index.HASH_REF_6aeb581adf3c1501da5beaee7363110a.css.map */

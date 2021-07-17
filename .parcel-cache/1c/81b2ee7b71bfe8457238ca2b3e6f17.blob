@@ -1,0 +1,23 @@
+document.getElementById("root").innerHTML = "Hola";
+function main() {
+    class Header extends HTMLElement {
+        constructor(){
+            super();
+            this.render();
+        }
+        render() {
+            var shadow = this.attachShadow({
+                mode: "open"
+            });
+            var headerEl = document.createElement("div");
+            headerEl.setAttribute("class", "header");
+            headerEl.innerText = "Soy header";
+            var style = document.createElement("style");
+            style.textContent = `.header {\n        background-color: #FF8282;\n        text-align: center;\n        height: 25px; \n      }\n      `;
+            shadow.appendChild(headerEl);
+            shadow.appendChild(style);
+        }
+    }
+    customElements.define("header-el", Header);
+}
+main();
